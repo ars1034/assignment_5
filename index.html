@@ -9,6 +9,7 @@
 		<script> 
 			document.addEventListener('deviceready', onDeviceReady, false);
 			function onDeviceReady(){ 
+			deviceready = true;
 			alert("10 books Aaron Smith Justin Borelli Justin Conklin");
 			}
 		var ref1 = cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/91b0C2YNSrL.jpg', '_blank', 'location=yes');
