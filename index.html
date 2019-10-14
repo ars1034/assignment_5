@@ -6,17 +6,22 @@
 		<link rel="stylesheet" type="text/css" href="index.css" />
         <title>Aaron Smith's 10 Favorite Books</title>
 		<script type="text/javascript" src="cordova.js"></script>
+		<script> 
+			document.addEventListener('deviceready', onDeviceReady, false);
+			function onDeviceReady(){ 
+				var element = document.getElementById('deviceInfo'); 
+				element.innerHTML = 'Device Model: ' + device.model + '<br />' + 'Device Cordova: ' + device.cordova +  '<br />' + 'Device Platform: ' + device.platform + '<br />' + 'Device UUID: ' + device.uuid + '<br />' + 'Device Version: ' + device.version + '<br />';
+				}
+			</script> 
 		<script>
-		function links() {
-			cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/91b0C2YNSrL.jpg', '_blank', 'location=yes');
-		}
+		var ref1 = cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/91b0C2YNSrL.jpg', '_blank', 'location=yes');
 		var ref2 = cordova.InAppBrowser.open('', '_blank', 'location=yes');
 		var ref3 = cordova.InAppBrowser.open('https://en.wikipedia.org/wiki/J._R._R._Tolkien', '_blank', 'location=yes');
 		var ref4 = cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/51DF6ZR8G7L._SX329_BO1,204,203,200_.jpg', '_blank', 'location=yes');
-		var ref5 = cordova.InAppBrowser.open('', '_blank', 'location=yes');
+		var ref5 = cordova.InAppBrowser.open('https://www.jkrowling.com/about/', '_blank', 'location=yes');
 		var ref6 = cordova.InAppBrowser.open('https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone', '_blank', 'location=yes');
 		var ref7 = cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/71WSzS6zvCL.jpg', '_blank', 'location=yes');
-		var ref8 = cordova.InAppBrowser.open('', '_blank', 'location=yes');
+		var ref8 = cordova.InAppBrowser.open('http://www.suzannecollinsbooks.com/bio.htm', '_blank', 'location=yes');
 		var ref9 = cordova.InAppBrowser.open('https://www.goodreads.com/book/show/2767052-the-hunger-games', '_blank', 'location=yes');
 		var ref10 = cordova.InAppBrowser.open('https://images-na.ssl-images-amazon.com/images/I/61FbXZT3CBL._SX334_BO1,204,203,200_.jpg', '_blank', 'location=yes');
 		var ref11 = cordova.InAppBrowser.open('', '_blank', 'location=yes');
@@ -40,6 +45,7 @@
 		var ref29 = cordova.InAppBrowser.open('', '_blank', 'location=yes');
 		var ref30 = cordova.InAppBrowser.open('https://www.goodreads.com/book/show/6186357-the-maze-runner', '_blank', 'location=yes');
 		</script>
+		
 		
 		
     </head>
